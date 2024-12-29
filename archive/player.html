@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="logo">MusicPlayer</h1>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search for music..." oninput="searchSongs()">
+    </div>
+    <div class="music-list">
+        <ul id="song-list">
+            <!-- Music list items will be dynamically populated here -->
+        </ul>
+    </div>
+
+    <!-- Music Player Container -->
+    <div class="player-container" id="player-container">
+        <div class="music-info">
+            <img id="album-cover" src="" alt="Album Cover">
+            <h2 id="track-name">Song Title</h2>
+            <p id="artist-name">Artist Name</p>
+        </div>
+
+        <!-- Controls Section -->
+        <div class="controls">
+            <button id="shuffle-btn" class="control-btn">Shuffle</button>
+            <button id="play-btn" class="control-btn">Play</button>
+        </div>
+
+        <!-- Timer Section -->
+        <div class="timer">
+            <p>Time: <span id="current-time">0:00</span> / <span id="total-time">3:30</span></p>
+        </div>
+
+        <!-- Minimize Bar -->
+        <div class="minimize-bar" id="minimize-bar">
+            <p>Minimize Player</p>
+        </div>
+
+        <!-- Maximize Bar -->
+        <div class="maximize-bar" id="maximize-bar">
+            <p>Maximize Player</p>
+        </div>
+    </div>   
+
+    <footer>
+        <p>&copy; 2024 MusicPlayer | All rights reserved</p>
+    </footer>
+
+    <script src="player.js"></script> <!-- Link to your JS -->
+</body>
+</html>
